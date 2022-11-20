@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <input type="text" [defaultValue]="articles.length">
+    <div class="card" *ngFor="let p of articles">
+      <div [style.background-color]="p.categorie==='Education' ? '#4240c2' :  ' '">
+        <div class="card-body" *ngIf=" p.categorie!=='Travail' ">
+          <h5 class="card-title">{{p.titre}}</h5>
+          <p class="card-text">Auteur:{{p.auteur}}</p>
+          <p class="card-text">Date:{{p.date}}</p>
+          <p class="card-text">Contenu:{{p.contenu}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
