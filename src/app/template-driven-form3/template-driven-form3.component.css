@@ -1,0 +1,36 @@
+form{
+  font-family: 'Averia Serif Libre';
+  margin: auto;
+  margin-top: 25vh;
+  width: 800px; height: 500px;
+  border: 5px solid;
+  border-radius: 25px;
+ }
+input{
+  border: 1px solid;
+  width: min-content;
+  margin-left:10px;
+}
+label{
+  margin-left:10px;
+ }
+.form2{
+   border: 3px solid ;
+  width: 70%;
+  margin-left:20px;
+
+}
+button{
+
+   margin-left:10px;
+  align-content: center;
+  position: center;
+
+}
+legend{
+  width:fit-content;
+  margin-top:-20px;
+  margin-left:10px;
+  background:white;
+ }
+

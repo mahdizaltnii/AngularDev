@@ -8,8 +8,10 @@ import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
 import { NofoundComponent } from './nofound/nofound.component';
 import { OffreDemploiComponent } from './offre-demploi/offre-demploi.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
  import { ArticlesComponent } from './articles/articles.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { TemplateDrivenForm3Component } from './template-driven-form3/template-driven-form3.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,15 @@ import {FormsModule} from "@angular/forms";
      NofoundComponent,
      OffreDemploiComponent,
       ArticlesComponent,
+      AddProductComponent,
+      TemplateDrivenForm3Component,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

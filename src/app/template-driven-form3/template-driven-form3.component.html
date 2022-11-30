@@ -1,0 +1,44 @@
+<form  [formGroup]="myForm"   (ngSubmit)="ajouter()" >
+  <legend>Informations generales</legend>
+
+  <div class="form-group">
+    <label>Nom</label>
+    <input type="text" class="form-control" name="nom" id="name" formControlName="name"  >
+  </div>
+
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" class="form-control" name="email" id="email" formControlName = "email" >
+  </div>
+  <div class="form-group">
+    <label>Numero carte</label>
+    <input type="text" class="form-control" id="number" formControlName="number">
+  </div>
+  <br>
+
+   <div formGroupName="Informations de payement" id="form2" class="form2">
+       <legend>Informations de payement</legend>
+
+
+     <div class="form-group">
+       <label>Type de carte</label>
+       <input type="text" class="form-control"   id="type" formControlName="type">
+     </div>
+
+     <div class="form-group">
+       <label>Date expiration</label>
+       <input type="date" class="form-control" id="date" formControlName="date">
+     </div>
+     <div class="form-group">
+       <label>Code</label>
+       <input type="text" class="form-control" id="code" formControlName="code">
+     </div>
+
+   </div>
+
+
+
+  <div class="form-group">
+    <button class="btn btn-danger btn-block" type="submit" value="save" [disabled]="myForm.invalid">Ajouter</button>
+  </div>
+</form>
